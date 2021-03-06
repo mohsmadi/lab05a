@@ -58,10 +58,20 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
-
-}
-
+function sumAndMultiply(x, y, z) { //eslint-disable-line
+    let sumandmultipy=[];
+    let theSum=sum(x,y)[0];
+    let total=sum(theSum,z)[0];
+    let multiply1=multiply(x,y)[0];
+    let multiply2=multiply(multiply1,z)[0];
+    sumandmultipy[0]=total;
+    sumandmultipy[1]=multiply2;
+    sumandmultipy[2]=x+' and '+y+' and '+z+' sum to '+total +'.';
+    sumandmultipy[3]='The product of '+x+' and '+y+' and '+z+' is '+multiply2+'.';
+    console.log(sumandmultipy);
+    return sumandmultipy;
+    }
+sumAndMultiply(4,7,5)
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
 
