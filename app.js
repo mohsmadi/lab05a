@@ -123,7 +123,16 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+    let respons=[];
+    let responsOne=multiply((multArr[0]),(multArr[1]))[0];
+    let responsTwo=multiply((responsOne),(multArr[2]))[0];
+    respons[0]=responsTwo;
+    let x=multArr[0];
+    let y=multArr[1];
+    let z=multArr[2];
+    cross[1]='The numbers '+x+','+y+','+z+' have a product of '+ responsTwo+'.';
+    console.log(respons);
+return respons;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
