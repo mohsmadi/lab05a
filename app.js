@@ -88,12 +88,22 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-var testArray = [2, 3, 4]; //eslint-disable-line
+let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-
+    let arr=[];
+    let sumArr1=sum((sumArr[0]),(sumArr[1]))[0];
+    let sumArr2=sum((sumArr1),(sumArr[2]))[0];
+    arr[0]=sumArr2;
+    let x=sumArr[0];
+    let y=sumArr[1];
+    let z=sumArr[2];
+    arr[1]=x+','+y+','+z+' was passed in as an array of numbers, and '+ sumArr2+' is their sum.';
+    console.log(arr);
+return arr;
 }
 
+// sumArray (2,3,4)
 // Here is the test for sumArray(); uncomment it to run it
 
 // testSumArray(testArray);
@@ -111,9 +121,20 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
+function multiplyArray(multiplyArr) { //eslint-disable-line
+    let answer=[];
+    let respondOne=multiply((multiplyArr[0]),(multiplyArr[1]))[0];
+    let respondTwo=multiply((respondOne),(multiplyArr[2]))[0];
+    answer[0]=respondTwo;
+    let x=multiplyArr[0];
+    let y=multiplyArr[1];
+    let z=multiplyArr[2];
+    cross[1]='The numbers '+x+','+y+','+z+' have a product of '+ respondTwo+'.';
+    console.log(answer);
+return answer;
 
 }
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
